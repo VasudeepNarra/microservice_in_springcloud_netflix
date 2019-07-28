@@ -73,12 +73,12 @@ API Gateway(ZUUL)
  How to find defact ?
  one single centralization location where we  complete chain of request.
  
- Zinkin Distributed Tracing
+ Zipkin Distributed Tracing
  =====================================================================
 centralization all the log base on Unique_id we can find the log
 and you can find very and trace which api is giving error .
  
-(RabitMQ)-->ZinkinDistributedTracingServer
+(RabitMQ)-->ZipkinDistributedTracingServer
 How to start Zipkin server 
 hit -> https://zipkin.io/quickstart.sh on the browser
 or read this  https://zipkin.io/pages/quickstart

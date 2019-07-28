@@ -73,8 +73,37 @@ API Gateway(ZUUL)
  How to find defact ?
  one single centralization location where we  complete chain of request.
  
+ Zinkin Distributed Tracing
+ =====================================================================
+centralization all the log base on Unique_id we can find the log
+and you can find very and trace which api is giving error .
+ 
+(RabitMQ)-->ZinkinDistributedTracingServer
+How to start Zipkin server 
+hit -> https://zipkin.io/quickstart.sh on the browser
+or read this  https://zipkin.io/pages/quickstart
 
+install rabbitMQ
+https://www.rabbitmq.com/install-windows.html
+and erlang download this one 
+https://www.erlang-solutions.com/resources/download.html
 
+check RAbbitMQ is running  >set RABBIT_URI=amqp://localhost
+and java -jar zipkin.jar
+
+it will start localhost:9411/zipkin
+
+and then you need to add dependecy in service to get log
+```
+ <dependency>
+	<groupId>org.springframework.cloud</groupId>
+	<artifactId>spring-cloud-sleuth-zipkin</artifactId>
+</dependency>
+ <dependency>
+	<groupId>org.springframework.cloud</groupId>
+	<artifactId>spring-cloud-starter-bus-amqp</artifactId>
+</dependency>
+```
 
 
 

@@ -105,7 +105,14 @@ and then you need to add dependecy in service to get log
 </dependency>
 ```
 
+Circuit Breaker(Hytrix)
+===============================================================================
+Isolate service failures with a basic state machine around (by definition risky) 
+service to service communication 
 
+also called a bulk head
+
+Hytrix is easy to plugin and easy to moniter services
 
 
  

@@ -56,6 +56,7 @@ service mantaince
 
 All the Microservice are register in Eureka naming server(service registration).
 
+<img src="https://github.com/gurutu/microservice_in_springcloud_netflix/blob/master/image/Eureka(DiscoveryServer).jpg">
 
 API Gateway(ZUUL)
 =====================================================================
@@ -104,6 +105,7 @@ and then you need to add dependecy in service to get log
 	<artifactId>spring-cloud-starter-bus-amqp</artifactId>
 </dependency>
 ```
+<img src="https://github.com/gurutu/microservice_in_springcloud_netflix/blob/master/image/Zipkin.jpg">
 
 Circuit Breaker(Hytrix)
 ===============================================================================
@@ -114,7 +116,7 @@ also called a bulk head
 
 Hytrix is easy to plugin and easy to moniter services
 
-
+<img src="https://github.com/gurutu/microservice_in_springcloud_netflix/blob/master/image/Hytrix.jpg">
  
 
 
